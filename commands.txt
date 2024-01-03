@@ -2,3 +2,9 @@ py manage.py test
 coverage run --omit="*/venv/*" manage.py test
 coverage report
 coverage html
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py test
+coverage run --omit="*/venv/*" manage.py test
+coverage report
